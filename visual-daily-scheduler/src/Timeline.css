@@ -1,0 +1,24 @@
+.timeline-wrapper {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f4ff;
+  border: 2px dashed #3b82f6;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+}

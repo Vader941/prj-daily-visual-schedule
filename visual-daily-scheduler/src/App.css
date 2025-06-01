@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  color: #3b82f6;
+}
+.task-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
