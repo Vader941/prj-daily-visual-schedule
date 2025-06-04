@@ -15,3 +15,27 @@ h1 {
   gap: 1rem;
   padding: 1rem;
 }
+.clear-button {
+  background-color: #ef4444; /* red */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clear-button:hover {
+  background-color: #dc2626;
+}
+.App {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.time-grid-container {
+  max-height: 300px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

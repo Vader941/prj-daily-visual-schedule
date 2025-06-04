@@ -1,0 +1,80 @@
+.time-grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background: #f7f7f7;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-rows: auto 80px;
+  grid-template-columns: 100px repeat(56, 1fr); /* or make this dynamic */
+  gap: 4px;
+  align-items: center;
+  min-width: 1200px;
+}
+
+.time-label {
+  font-size: 0.8rem;
+  text-align: center;
+  background: #e0e0e0;
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+
+.row-label {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 8px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.time-slot {
+  background-color: #fff;
+  border: 1px dashed #ccc;
+  height: 100%;
+  min-height: 80px;
+  transition: background-color 0.2s ease;
+}
+
+.task {
+  background-color: #add8e6;
+  border-left: 4px solid #005f73;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+  z-index: 1;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.time-slot {
+  background-color: #eaffea; /* light green for available */
+  border: 1px solid #ccc;
+  min-height: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.slot-blocked {
+  background-color: #ffd6d6 !important; /* light red for blocked */
+  pointer-events: none;
+}
+
+.drag-over {
+  background-color: #d0f0fd !important; /* highlight on drag over */
+}
